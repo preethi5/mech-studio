@@ -1,7 +1,11 @@
 import React from "react";
 import "../styles.css";
 
-export default function VehicleCard({ vehi }) {
+export default function VehicleCard({
+  vehi,
+  isTestDriven,
+  toggleTestDriveList,
+}) {
   // to handle err. if no img available set the default img given
   const handleError = (evnt) => {
     evnt.target.src = "images/default.jpg";
@@ -23,12 +27,28 @@ export default function VehicleCard({ vehi }) {
         onError={handleError}
       />
       <div className="movie-card-info">
-        <h3 className="movie-card-title">{vehi.title}</h3>
-        <h5 className="movie-card-genre">{vehi.model}</h5>
-        <p className="movie-card-genre">{vehi.genre}</p>
-        <p className={`movie-card-rating ${getRatingClass(vehi.rating)}`}>
-          {vehi.rating}
-        </p>
+        <div>
+          <h3 className="movie-card-title">{vehi.title}</h3>
+          <h5 className="movie-card-genre">{vehi.model}</h5>
+        </div>
+        <div>
+          <span className="movie-card-genre">{vehi.genre}</span>
+          <span className={`movie-card-rating ${getRatingClass(vehi.rating)}`}>
+            {vehi.rating}
+          </span>
+        </div>
+        <label className="switch">
+          <input
+            type="checkbox"
+            checked={isTestDriven}
+            onChange={() => toggleTestDriveList(vehi.id)}
+          ></input>
+          <span className="slider">
+            <span className="slider-label">
+              {isTestDriven ? "Test Drive Done" : "Add to Test Drive List"}
+            </span>
+          </span>
+        </label>
       </div>
     </div>
   );

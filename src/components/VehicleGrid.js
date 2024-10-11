@@ -1,19 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../styles.css";
 import VehicleCard from "./VehicleCard";
 
-export default function VehicleGrid() {
-  const [vehicles, setVehicle] = useState([]);
+export default function VehicleGrid({
+  vehicles,
+  testDriveList,
+  toggleTestDriveList,
+}) {
   const [searchStr, setSearchStr] = useState("");
   const [genre, setGenre] = useState("All Genre");
   const [rating, setRating] = useState("All Rating");
   const [type, setType] = useState("All Types");
-
-  useEffect(() => {
-    fetch("vehicles.json")
-      .then((resp) => resp.json())
-      .then((data) => setVehicle(data));
-  }, []); // [] --> means when to repeat this effect. [] - load only one time
 
   const handleSearchChange = (eve) => {
     setSearchStr(eve.target.value);
@@ -128,7 +125,12 @@ export default function VehicleGrid() {
       <div className="movies-grid">
         {filteredVehicles.map((vehi) => (
           // Pass id also as an unique identifier
-          <VehicleCard vehi={vehi} key={vehi.id} />
+          <VehicleCard
+            vehi={vehi}
+            key={vehi.id}
+            toggleTestDriveList={toggleTestDriveList}
+            isTestDriven={testDriveList.includes(vehi.id)}
+          />
         ))}
       </div>
     </div>
