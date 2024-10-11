@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "title": "Royal Enfield",
+    "model": "Classic",
+    "image": "b1.jpg",
+    "genre": "sporty",
+    "type": "bike",
+    "rating": "8.3"
+  },
+  {
+    "id": 2,
+    "title": "Harley Davidson",
+    "model": "X440",
+    "image": "b2.jpg",
+    "genre": "premium",
+    "type": "bike",
+    "rating": "7.7"
+  },
+  {
+    "id": 3,
+    "title": "BMW",
+    "image": "b3.jpg",
+    "model": "310RR",
+    "genre": "premium",
+    "type": "bike",
+    "rating": "6.3"
+  },
+  {
+    "id": 4,
+    "title": "Yamaha",
+    "model": "MT15",
+    "image": "b4.jpg",
+    "genre": "sporty",
+    "type": "bike",
+    "rating": "9.3"
+  },
+  {
+    "id": 5,
+    "title": "Jawa",
+    "model": "42FJ",
+    "image": "b5.jpg",
+    "genre": "sporty",
+    "type": "bike",
+    "rating": "6.9"
+  },
+  {
+    "id": 6,
+    "title": "Pulsor",
+    "model": "NS",
+    "image": "b6.jpg",
+    "genre": "sporty",
+    "type": "bike",
+    "rating": "8.4"
+  },
+  {
+    "id": 7,
+    "title": "Apache",
+    "image": "b7.jpg",
+    "model": "RTR 120",
+    "genre": "premium",   
+     "type": "bike",
+    "rating": "9.8"
+  },
+  {
+    "id": 8,
+    "title": "Honda",
+    "model": "CBR 120",
+    "image": "b8.jpg",
+    "genre": "sporty",
+    "type": "bike",
+    "rating": "7.2"
+  },
+  {
+    "id": 9,
+    "title": "KTM",
+    "model": "RC 390",
+    "image": "b9.jpg",
+    "genre": "premium",
+    "type": "bike",
+    "rating": "9.7"
+  },
+  {
+    "id": 10,
+    "title": "Bajaj",
+    "model": "Avenger",
+    "image": "b10.jpg",
+    "genre": "sporty",
+    "type": "bike",
+    "rating": "1.5"
+  },
+  {
+    "id": 11,
+    "title": "Lamborghini",
+    "model": "Aventador",
+    "image": "c1.jpg",
+    "genre": "premium",
+    "type": "car",
+    "rating": "8.5"
+  },
+  {
+    "id": 12,
+    "title": "BMW",
+    "model": "Q5",
+    "image": "c2.jpg",
+    "genre": "sporty",
+    "type": "car",
+    "rating": "7.5"
+  },
+  {
+    "id": 13,
+    "title": "Audi",
+    "model": "QQ7",
+    "image": "c3.jpg",
+    "genre": "sporty",
+    "type": "car",
+    "rating": "8.4"
+  },
+  {
+    "id": 14,
+    "title": "Rolls Royce",
+    "model": "Ghost",
+    "image": "c4.jpg",
+    "genre": "premium",
+    "type": "car",
+    "rating": "6.5"
+  },
+  {
+    "id": 15,
+    "title": "Ford",
+    "model": "Eco Sport",
+    "image": "c5.jpg",
+    "genre": "sporty",
+    "type": "car",
+    "rating": "9.8"
+  },
+  {
+    "id": 16,
+    "title": "Koeniggsegg",
+    "model": "Agera",
+    "image": "c6.jpg",
+    "genre": "premium",
+    "type": "car",
+    "rating": "9.1"
+  },
+  {
+    "id": 17,
+    "title": "Kia",
+    "model": "Sonet",
+    "image": "c7.jpg",
+    "genre": "sporty",
+    "type": "car",
+    "rating": "4.0"
+  },
+  {
+    "id": 18,
+    "title": "Mercedes Benz",
+    "model": "GLC",
+    "image": "c8.jpg",
+    "genre": "sporty",
+    "type": "car",
+    "rating": "9.0"
+  }
+]
