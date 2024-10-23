@@ -7,6 +7,13 @@ export default function TestDriveList({
   testDriveList,
   toggleTestDriveList,
 }) {
+  if (testDriveList.length === 0) {
+    return (
+      <div>
+        <h5>Your Test Drive List is empty...</h5>
+      </div>
+    );
+  }
   return (
     <div>
       <h1 className="title">Your Test Drive List</h1>

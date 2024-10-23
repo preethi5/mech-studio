@@ -70,6 +70,21 @@ export default function VehicleGrid({
       matchedSearchString(vehi, searchStr)
   );
 
+  if (filteredVehicles.length === 0) {
+    return (
+      <div>
+        <input
+          type="text"
+          className="search-input"
+          placeholder="Search Vehicles..."
+          value={searchStr}
+          onChange={handleSearchChange}
+        />
+        <br />
+        No Vechile found...
+      </div>
+    );
+  }
   return (
     <div>
       <input
