@@ -6,10 +6,15 @@ import VehicleGrid from "./components/VehicleGrid";
 import TestDriveList from "./components/TestDriveList";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import VehicleDetails from "./components/VehicleDetails";
 
 function App() {
   const [vehicles, setVehicle] = useState([]);
   const [testDriveList, setTestDriveList] = useState([]);
+
+  const userId = [1, 2, 3, 4, 5];
+
+  const userIdEle = userId.map((id) => <li key={id}>{id}</li>); //variable which stores an html ele which is li
 
   useEffect(() => {
     fetch("vehicles.json")
@@ -62,11 +67,16 @@ function App() {
                 />
               }
             ></Route>
+            <Route
+              path="/details/:id"
+              element={<VehicleDetails vehicles={vehicles} />}
+            ></Route>
           </Routes>
         </Router>
       </div>
       {/* should be entire width so no need of container */}
       <Footer></Footer>
+      <ul>{userIdEle}</ul>
     </div>
   );
 }

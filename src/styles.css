@@ -159,6 +159,7 @@ body {
   max-width: 920px;
   margin: 0 auto;
   display: block;
+  height: 260px;
 }
 
 .app-subtitle {
@@ -168,7 +169,7 @@ body {
 }
 
 nav {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 25px;
 }
 
@@ -249,4 +250,17 @@ input:checked + .slider:before {
 
 input:checked + .slider {
   background-color: #FFA100;
+}
+
+.details-button {
+  width: 140px;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+}
+
+.details-div{
+      border: white solid;
 }

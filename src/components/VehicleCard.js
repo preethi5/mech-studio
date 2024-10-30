@@ -1,15 +1,14 @@
 import React from "react";
 import "../styles.css";
+import { useNavigate } from "react-router-dom";
+import { handleError } from "../utils/Utils";
 
 export default function VehicleCard({
   vehi,
   isTestDriven,
   toggleTestDriveList,
 }) {
-  // to handle err. if no img available set the default img given
-  const handleError = (evnt) => {
-    evnt.target.src = "images/default.jpg";
-  };
+  const navigate = useNavigate();
 
   // to set the color for rating
   const getRatingClass = (rating) => {
@@ -19,8 +18,12 @@ export default function VehicleCard({
     return "rating-bad";
   };
 
+  const handleDetailsClick = () => {
+    navigate(`/details/${vehi.id}`); // Navigate to /details/:id
+  };
+
   return (
-    <div key={vehi.id} className="movie-card">
+    <div className="movie-card">
       <img
         src={`images/${vehi.image}`}
         alt={vehi.title}
@@ -49,6 +52,11 @@ export default function VehicleCard({
             </span>
           </span>
         </label>
+        <div>
+          <button className="details-button" onClick={handleDetailsClick}>
+            Details
+          </button>
+        </div>
       </div>
     </div>
   );
